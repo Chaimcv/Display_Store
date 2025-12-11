@@ -6,13 +6,11 @@ const product=fetch('https://fakestoreapi.com/products/')
     return`
     <div class="card"{key=item.id}>
     <h3 class="card-title">${item?.title}</h3>
-   
     <img class="image" src="${item?.image}"> 
      <h4 class="card-price">Price:${item?.price}</p>
     </div>
       `;}).join("");
        document.getElementById("display").innerHTML=display;
-       
        })
   
     
